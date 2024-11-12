@@ -1,170 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/css/style.css">
-   <title>Calc</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Calc</title>
 </head>
+
 <body>
-  
-   <div class="m-12 bg-gradient-to-r from-blue-500 to-yellow-500 p-8 rounded-xl shadow-lg backdrop-blur-md max-w-lg mx-auto ">
-       <form class=" border-4 rounded-lg text-lg  p-4 max-w-lg mx-auto">
 
-   <div class="">
-       <div class="mb-4">
-         <label class="block text-lg font-bold mb-2" for="region">
-           Регіон:
-         </label>
-         <select id="region" class="block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-          
-          <option value="1" data-temperature="-3.2" data-days="190">Київська область</option>
-          <option value="2" data-temperature="-3.4" data-days="195">Вінницька область</option>
-          <option value="3" data-temperature="-2.8" data-days="185">Волинська область</option>
-          <option value="4" data-temperature="-4.8" data-days="210">Дніпропетровська область</option>
-          <option value="5" data-temperature="-5.0" data-days="215">Донецька область</option>
-          <option value="6" data-temperature="-3.9" data-days="202">Житомирська область</option>
-          <option value="7" data-temperature="-2.6" data-days="185">Закарпатська область</option>
-          <option value="8" data-temperature="-4.5" data-days="208">Запорізька область</option>
-          <option value="9" data-temperature="-3.8" data-days="198">Івано-Франківська область</option>
-          <option value="10" data-temperature="-4.9" data-days="209">Кіровоградська область</option>
-          <option value="11" data-temperature="-1.5" data-days="170">Крим</option>
-          <option value="12" data-temperature="-5.3" data-days="213">Луганська область</option>
-          <option value="13" data-temperature="-3.6" data-days="200">Львівська область</option>
-          <option value="14" data-temperature="-2.2" data-days="180">Миколаївська область</option>
-          <option value="15" data-temperature="-1.8" data-days="178">Одеська область</option>
-          <option value="16" data-temperature="-4.3" data-days="205">Полтавська область</option>
-          <option value="17" data-temperature="-3.5" data-days="197">Рівненська область</option>
-          <option value="18" data-temperature="-4.4" data-days="204">Сумська область</option>
-          <option value="19" data-temperature="-3.0" data-days="192">Тернопільська область</option>
-          <option value="20" data-temperature="-4.0" data-days="205">Харківська область</option>
-          <option value="21" data-temperature="-1.7" data-days="182">Херсонська область</option>
-          <option value="22" data-temperature="-3.1" data-days="194">Хмельницька область</option>
-          <option value="23" data-temperature="-5.2" data-days="210">Черкаська область</option>
-          <option value="24" data-temperature="-3.7" data-days="198">Чернівецька область</option>
-          <option value="25" data-temperature="-4.1" data-days="206">Чернігівська область</option>
-          
-         </select>
-       </div>
+  <div
+    class="max-w-lg p-8 m-12 mx-auto shadow-lg bg-gradient-to-r from-blue-500 to-yellow-500 rounded-xl backdrop-blur-md ">
+    <form class="max-w-lg p-4 mx-auto text-lg border-4 rounded-lg ">
 
-     <div class="mb-4">
-       <label class="block text-lg font-bold mb-2" for="insulated_object">
-         Який об'єкт утеплюємо: 
-       </label>
-       <select id="insulated_object" class="block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+      <div class="">
+        <div class="mb-4">
+          <label class="block mb-2 text-lg font-bold" for="region">
+            Регіон:
+          </label>
+          <select id="region"
+            class="block w-full px-4 py-2 pr-8 leading-tight text-gray-700 bg-white border border-gray-400 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500">
 
-          <option value="1">Жилі будівлі, готелі та гуртожитки</option>
-          <option value="2">Виробничі та інші будівлі з вологим або мокрим режимом</option>
-          <option value="3">Виробничі будівлі з сухим і нормальним режимом</option>
-          <option value="4">Каркасні та безкаркасні ангари і склади з профлиста</option>
-          <option value="5">Каркасні будинки</option>
+            <option value="1" data-temperature="-3.2" data-days="190">Київська область</option>
+            <option value="2" data-temperature="-3.4" data-days="195">Вінницька область</option>
+            <option value="3" data-temperature="-2.8" data-days="185">Волинська область</option>
+            <option value="4" data-temperature="-4.8" data-days="210">Дніпропетровська область</option>
+            <option value="5" data-temperature="-5.0" data-days="215">Донецька область</option>
+            <option value="6" data-temperature="-3.9" data-days="202">Житомирська область</option>
+            <option value="7" data-temperature="-2.6" data-days="185">Закарпатська область</option>
+            <option value="8" data-temperature="-4.5" data-days="208">Запорізька область</option>
+            <option value="9" data-temperature="-3.8" data-days="198">Івано-Франківська область</option>
+            <option value="10" data-temperature="-4.9" data-days="209">Кіровоградська область</option>
+            <option value="11" data-temperature="-1.5" data-days="170">Крим</option>
+            <option value="12" data-temperature="-5.3" data-days="213">Луганська область</option>
+            <option value="13" data-temperature="-3.6" data-days="200">Львівська область</option>
+            <option value="14" data-temperature="-2.2" data-days="180">Миколаївська область</option>
+            <option value="15" data-temperature="-1.8" data-days="178">Одеська область</option>
+            <option value="16" data-temperature="-4.3" data-days="205">Полтавська область</option>
+            <option value="17" data-temperature="-3.5" data-days="197">Рівненська область</option>
+            <option value="18" data-temperature="-4.4" data-days="204">Сумська область</option>
+            <option value="19" data-temperature="-3.0" data-days="192">Тернопільська область</option>
+            <option value="20" data-temperature="-4.0" data-days="205">Харківська область</option>
+            <option value="21" data-temperature="-1.7" data-days="182">Херсонська область</option>
+            <option value="22" data-temperature="-3.1" data-days="194">Хмельницька область</option>
+            <option value="23" data-temperature="-5.2" data-days="210">Черкаська область</option>
+            <option value="24" data-temperature="-3.7" data-days="198">Чернівецька область</option>
+            <option value="25" data-temperature="-4.1" data-days="206">Чернігівська область</option>
 
-       </select>
-     </div>
-     <div class="mb-4">
-      <label class="block text-lg font-bold mb-2" for="temp">
-         Температура всередині об'єкта (°C):<br>
-         <!-- Вкажіть бажану температуру в приміщенні. Для житлових приміщень норматив - 20 °C -->
-       </label>
-        <input id="temp" type="number" value="20" min="0" max="50" step="1" class="w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:border-blue-500">
-     </div>
-
-       <div class="mb-4">
-         <label for="object" class="block text-lg font-bold mb-2">Що утеплюємо:</label>
-         <select id="object" class="block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-
-         </select>
-         </div>
-   </div>
-
-   <div>
-      <h3 class="text-lg font-bold">
-          Шари огороджувальної конструкції
-      </h3>
-    
-      <div class="layer mt-4 border pt-5 rounded-lg border-gray-300 p-2">
-          <div class="border-solid border-2 px-3 mb-4 inline-block rounded-full border-gray-300 font-medium"><span>1</span> шар</div>
-
-      <div class="all-layer mb-4">
-    
-         <select id="material" class="material mb-4 block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-            <option value="0.8">Керамзитобетон на керамзитовому піску щільністю 1800 кг/м3</option>
-            <option value="0.67">Керамзитобетон на керамзитовому піску щільністю 1600 кг/м3</option>
-            <option value="0.56">Керамзитобетон на керамзитовому піску щільністю 1400 кг/м3</option>
-            <option value="0.44">Керамзитобетон на керамзитовому піску щільністю 1200 кг/м3</option>
-            <option value="0.33">Керамзитобетон на керамзитовому піску щільністю 1000 кг/м3</option>
-            <option value="0.24">Керамзитобетон на керамзитовому піску щільністю 800 кг/м3</option>
-            <option value="0.2">Керамзитобетон на керамзитовому піску щільністю 600 кг/м3</option>
-            <option value="0.17">Керамзитобетон на керамзитовому піску щільністю 500 кг/м3</option>
-            <option value="0.175">Полістиролбетон на портландцементі щільністю 600 кг/м3</option>
-            <option value="0.14">Полістиролбетон на портландцементі щільністю 500 кг/м3</option>
-            <option value="0.12">Полістиролбетон на портландцементі щільністю 400 кг/м3</option>
-            <option value="0.11">Полістиролбетон на портландцементі щільністю 350 кг/м3</option>
-            <option value="0.09">Полістиролбетон на портландцементі щільністю 300 кг/м3</option>
-            <option value="0.085">Полістиролбетон на портландцементі щільністю 250 кг/м3</option>
-            <option value="0.07">Полістиролбетон на портландцементі щільністю 200 кг/м3</option>
-            <option value="0.057">Полістиролбетон на портландцементі щільністю 150 кг/м3</option>
-            <option value="0.38">Газо- і пінобетон на цементному в'яжучому щільністю 1000 кг/м3</option>
-            <option value="0.33">Газо- і пінобетон на цементному в'яжучому щільністю 800 кг/м3</option>
-            <option value="0.22">Газо- і пінобетон на цементному в'яжучому щільністю 600 кг/м3</option>
-            <option value="0.14">Газо- і пінобетон на цементному в'яжучому щільністю 400 кг/м3</option>
-            <option value="0.7">Суцільна глиняна цегла на цементно-піщаному розчині</option>
-            <option value="0.76">суцільна силікатна цегла на цементно-піщаному розчині</option>
-            <option value="0.58">Пустотна керамічна цегла щільністю 1400 кг/м3</option>
-            <option value="0.52">Пустотна керамічна цегла щільністю 1300 кг/м3</option>
-            <option value="0.47">Пустотна керамічна цегла щільністю 1000 кг/м3</option>
-            <option value="0.14">Сосна та смерека поперек волокон</option>
-            <option value="0.29">Сосна та смерека вздовж волокон</option>
-            <option value="0.18">Дуб поперек волокон</option>
-            <option value="0.35">Дуб уздовж волокон</option>
-            <option value="0.15">Фанера клеєна</option>
-            <option value="1.92">Залізобетон</option> 
-            <option value="0.76">Розчин цементно-піщаний</option>
-            <option value="0.27">Бітуми нафтові будівельні та покрівельні щільністю 1400 кг/м3</option>
-            <option value="0.22">Бітуми нафтові будівельні та покрівельні щільністю 1200 кг/м3</option>
-            <option value="0.17">Бітуми нафтові будівельні та покрівельні щільністю 1000 кг/м3</option>
-            <option value="1.05">Асфальтобетон</option>
-            <option value="0.17">Руберойд, пергамін, толь</option>
-            <option value="0.049">Пенополіетилен щільністю 26 кг/м3</option>
-            <option value="0.05">Пінополіетилен щільністю 30 кг/м3</option>
-            <option value="58">Сталь</option>
-            <option value="50">Чугун</option>
-            <option value="221">Алюміній</option>
-            <option value="407">Мідь</option>
           </select>
-          <label class="block text-lg font-bold mb-2" for="thickness">  
-            Товщина, (м):
+        </div>
+
+        <div class="mb-4">
+          <label class="block mb-2 text-lg font-bold" for="insulated_object">
+            Який об'єкт утеплюємо:
+          </label>
+          <select id="insulated_object"
+            class="block w-full px-4 py-2 pr-8 leading-tight text-gray-700 bg-white border border-gray-400 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500">
+
+            <option value="1">Жилі будівлі, готелі та гуртожитки</option>
+            <option value="2">Виробничі та інші будівлі з вологим або мокрим режимом</option>
+            <option value="3">Виробничі будівлі з сухим і нормальним режимом</option>
+            <option value="4">Каркасні та безкаркасні ангари і склади з профлиста</option>
+            <option value="5">Каркасні будинки</option>
+
+          </select>
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 text-lg font-bold" for="temp">
+            Температура всередині об'єкта (°C):<br>
+            <!-- Вкажіть бажану температуру в приміщенні. Для житлових приміщень норматив - 20 °C -->
+          </label>
+          <input id="temp" type="number" value="20" min="0" max="50" step="1"
+            class="w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div class="mb-4">
+          <label for="object" class="block mb-2 text-lg font-bold">Що утеплюємо:</label>
+          <select id="object"
+            class="block w-full px-4 py-2 pr-8 leading-tight text-gray-700 bg-white border border-gray-400 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500">
+
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold">
+          Шари огороджувальної конструкції
+        </h3>
+
+        <div class="p-2 pt-5 mt-4 border border-gray-300 rounded-lg layer">
+          <div class="inline-block px-3 mb-4 font-medium border-2 border-gray-300 border-solid rounded-full">
+            <span>1</span> шар</div>
+
+          <div class="mb-4 all-layer">
+
+            <select id="material"
+              class="block w-full px-4 py-2 pr-8 mb-4 leading-tight text-gray-700 bg-white border border-gray-400 rounded appearance-none material focus:outline-none focus:bg-white focus:border-gray-500">
+              <option value="0.8">Керамзитобетон на керамзитовому піску щільністю 1800 кг/м3</option>
+              <option value="0.67">Керамзитобетон на керамзитовому піску щільністю 1600 кг/м3</option>
+              <option value="0.56">Керамзитобетон на керамзитовому піску щільністю 1400 кг/м3</option>
+              <option value="0.44">Керамзитобетон на керамзитовому піску щільністю 1200 кг/м3</option>
+              <option value="0.33">Керамзитобетон на керамзитовому піску щільністю 1000 кг/м3</option>
+              <option value="0.24">Керамзитобетон на керамзитовому піску щільністю 800 кг/м3</option>
+              <option value="0.2">Керамзитобетон на керамзитовому піску щільністю 600 кг/м3</option>
+              <option value="0.17">Керамзитобетон на керамзитовому піску щільністю 500 кг/м3</option>
+              <option value="0.175">Полістиролбетон на портландцементі щільністю 600 кг/м3</option>
+              <option value="0.14">Полістиролбетон на портландцементі щільністю 500 кг/м3</option>
+              <option value="0.12">Полістиролбетон на портландцементі щільністю 400 кг/м3</option>
+              <option value="0.11">Полістиролбетон на портландцементі щільністю 350 кг/м3</option>
+              <option value="0.09">Полістиролбетон на портландцементі щільністю 300 кг/м3</option>
+              <option value="0.085">Полістиролбетон на портландцементі щільністю 250 кг/м3</option>
+              <option value="0.07">Полістиролбетон на портландцементі щільністю 200 кг/м3</option>
+              <option value="0.057">Полістиролбетон на портландцементі щільністю 150 кг/м3</option>
+              <option value="0.38">Газо- і пінобетон на цементному в'яжучому щільністю 1000 кг/м3</option>
+              <option value="0.33">Газо- і пінобетон на цементному в'яжучому щільністю 800 кг/м3</option>
+              <option value="0.22">Газо- і пінобетон на цементному в'яжучому щільністю 600 кг/м3</option>
+              <option value="0.14">Газо- і пінобетон на цементному в'яжучому щільністю 400 кг/м3</option>
+              <option value="0.7">Суцільна глиняна цегла на цементно-піщаному розчині</option>
+              <option value="0.76">суцільна силікатна цегла на цементно-піщаному розчині</option>
+              <option value="0.58">Пустотна керамічна цегла щільністю 1400 кг/м3</option>
+              <option value="0.52">Пустотна керамічна цегла щільністю 1300 кг/м3</option>
+              <option value="0.47">Пустотна керамічна цегла щільністю 1000 кг/м3</option>
+              <option value="0.14">Сосна та смерека поперек волокон</option>
+              <option value="0.29">Сосна та смерека вздовж волокон</option>
+              <option value="0.18">Дуб поперек волокон</option>
+              <option value="0.35">Дуб уздовж волокон</option>
+              <option value="0.15">Фанера клеєна</option>
+              <option value="1.92">Залізобетон</option>
+              <option value="0.76">Розчин цементно-піщаний</option>
+              <option value="0.27">Бітуми нафтові будівельні та покрівельні щільністю 1400 кг/м3</option>
+              <option value="0.22">Бітуми нафтові будівельні та покрівельні щільністю 1200 кг/м3</option>
+              <option value="0.17">Бітуми нафтові будівельні та покрівельні щільністю 1000 кг/м3</option>
+              <option value="1.05">Асфальтобетон</option>
+              <option value="0.17">Руберойд, пергамін, толь</option>
+              <option value="0.049">Пенополіетилен щільністю 26 кг/м3</option>
+              <option value="0.05">Пінополіетилен щільністю 30 кг/м3</option>
+              <option value="58">Сталь</option>
+              <option value="50">Чугун</option>
+              <option value="221">Алюміній</option>
+              <option value="407">Мідь</option>
+            </select>
+            <label class="block mb-2 text-lg font-bold" for="thickness">
+              Товщина, (м):
+            </label>
+            <input id="thickness" type="number" value="0.1" min="0" max="50" step="0.1"
+              class="block w-full px-4 py-2 mb-4 leading-tight text-gray-700 bg-white border border-gray-400 rounded  thickness">
+
+
+          </div>
+
+        </div>
+
+
+
+        <button
+          class="w-full px-4 py-2 mt-2 font-semibold text-center text-white bg-yellow-500 rounded btn-add hover:bg-yellow-600">Додати
+          новий шар</button>
+
+      </div>
+
+      <div class="mt-4 mb-4">
+        <label class="block mb-2 text-lg font-bold " for="temp">
+          Площа нанесення ППУ(м²):<br>
         </label>
-        <input id="thickness"  type="number" value="0.1" min="0" max="50" step="0.1" class=" thickness mb-4 block w-full bg-white border border-gray-400 text-gray-700 py-2 px-4 rounded leading-tight">
-  
+        <input id="area-app" placeholder="м²"
+          class="w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:border-blue-500">
+      </div>
 
-    </div>
-    
-   </div>
+      <button id="calculate"
+        class="w-full px-4 py-3 font-bold text-white transition duration-300 bg-blue-500 rounded hover:bg-blue-600">
+        Розрахувати
+      </button>
 
-  
+      <p id="res" class="p-3 mt-4 text-xl font-semibold text-blue-700 bg-blue-100 rounded shadow-md">Товщина
+        теплоізоляційного шару огороджувальної конструкції:
+        <br> Витрата матеріалу:
+      </p>
 
-       <button class="btn-add w-full text-center  bg-yellow-500 text-white font-semibold py-2 px-4 rounded mt-2 hover:bg-yellow-600">Додати новий шар</button>
+    </form>
+  </div>
 
-   </div>
-
-   <div class="mb-4 mt-4">
-    <label class=" block text-lg font-bold mb-2 " for="temp">
-       Площа нанесення ППУ(м²):<br>
-     </label>
-      <input id="area-app"  placeholder="м²" class="w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:border-blue-500">
-   </div>
-
-<button id="calculate" class="w-full bg-blue-500 text-white font-bold py-3 px-4 rounded hover:bg-blue-600 transition duration-300">
-   Розрахувати
-</button>
-
-<p id="res" class="text-xl font-semibold text-blue-700 mt-4 bg-blue-100 p-3 rounded shadow-md">Товщина теплоізоляційного шару огороджувальної конструкції: 
- <br> Витрата матеріалу: </p>
-
-</form>
-</div>
-
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
